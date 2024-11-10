@@ -87,7 +87,7 @@
 
     &__notify {
         position: relative;
-        margin: 170px auto 0;
+        margin: 220px auto 0;
         width: 680px;
         height: 60px;
         background-color: color.adjust(v.$color__white, $alpha: -0.85);
@@ -131,9 +131,10 @@
 
 
         @media (max-width:v.$media_md) {
+            position: 100;
             width: 100%;
             max-width: 450px;
-            margin: 170px auto 0;
+            margin: 170px auto 100px;
             height: fit-content;
             @include m.d-flex(start, center, nowrap, column, 0, 0);
 
@@ -160,7 +161,7 @@
             }
 
             &-content {
-                padding: 10px 10px 10px 100px;
+                padding: 10px 10px 10px 10px;
                 @include m.font(11px, 400, v.$color__black);
             }
         }
