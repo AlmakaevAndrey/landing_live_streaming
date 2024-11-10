@@ -3,14 +3,14 @@
 @use 'sass:color';
 
 .work-section {
-    padding: 50px 20px 180px;
+    padding: 0 20px 100px;
 
     .work {
-        margin: 170px 0 0 0;
+        margin: 165px 0 0 0;
         text-align: center;
 
         &__title {
-            margin: 100px 0 80px 0;
+            margin: 350px 0 80px 0;
             @include m.font(60px, 400, v.$color__white);
 
             @media (max-width:v.$media_min){
@@ -93,7 +93,7 @@
 
                 @media(max-width: v.$media_md) {
                     .work {
-                        position: 100px;
+                        position: 1px;
                     }
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(4, 1fr);
