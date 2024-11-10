@@ -1,148 +1,19 @@
-* {
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 21 |             @include m.font(110px, 700, v.$color__black, );
+ *    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   styles\_hero.scss 21:13    @forward
+ *   styles\_importer.scss 3:1  @use
+ *   styles\index.scss 2:1      root stylesheet */
 
-body {
-  font-family: Roboto;
-  margin: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502              @include m.font(110px, 700, v.$color__black, );\d\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\_hero.scss 21:13    @forward\a   styles\\_importer.scss 3:1  @use\a   styles\\index.scss 2:1      root stylesheet";
 }
-
-h1, h2, h3, h4, h5, h6, ul, p, button {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-li {
-  list-style: none;
-  display: inline;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.header .nav__title-link:hover, .header .nav__links .list__item-link:hover, .header .nav .covid__link:hover {
-  cursor: pointer;
-  color: #000;
-}
-
-.header .nav .globe__link-icon:hover {
-  cursor: pointer;
-  fill: #000;
-}
-
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #fff;
-}
-.header .nav {
-  height: 50px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
-  row-gap: 0;
-}
-.header .nav__title {
-  height: 100%;
-  width: 255px;
-  border-right: 1px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
-  row-gap: 0;
-}
-.header .nav__title-link {
-  font-size: 25px;
-  font-weight: 500;
-  color: #fff;
-}
-.header .nav__title-link span {
-  font-weight: 700;
-}
-.header .nav__links {
-  flex-grow: 1;
-}
-.header .nav__links .list {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: min(100px, 5vw);
-  row-gap: 0;
-  padding: 0 0 0 min(100px, 5vw);
-  border-left: 100px;
-}
-.header .nav__links .list__item-link {
-  font-size: 22px;
-  font-weight: 400;
-  color: #fff;
-  margin: 17%;
-}
-@media (max-width: 992px) {
-  .header .nav__links .list__item-link {
-    margin: 11vw;
-    padding: 0 0 0 0;
-  }
-}
-@media (max-width: 1050px) {
-  .header .nav__links .list__item-link {
-    margin: 5vw;
-    padding: 0 0 0 0;
-  }
-}
-.header .nav .covid {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
-  row-gap: 0;
-  padding: 0 38px;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-.header .nav .covid__link {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-}
-.header .nav .globe {
-  width: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
-  row-gap: 0;
-}
-.header .nav .globe__link-icon {
-  width: 27px;
-  height: 28px;
-  fill: #fff;
-}
-
-body {
-  background-color: #4a68b5;
-}
-
-/*# sourceMappingURL=index.css.map */
