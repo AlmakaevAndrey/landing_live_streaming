@@ -18,7 +18,7 @@
         margin: 0 auto;
 
         .hero__title {
-            @include m.font(110px, 700, v.$color__black, );
+            @include m.font(110px, 700, v.$color__black);
             line-heigth: 1;
         }
 
