@@ -92,6 +92,7 @@
     &__notify {
         position: relative;
         margin: 200px auto 0;
+        margin-bottom: 100px;
         width: 680px;
         height: 60px;
         background-color: color.adjust(v.$color__white, $alpha: -0.85);

@@ -109,7 +109,7 @@
 
             &__link {
                 font-size: 16px;
-                font-weight: 700;
+                font-weight: 600;
                 color: v.$color__white;
 
                 @extend %hover-black;
@@ -121,9 +121,11 @@
             @include m.d-flex(center,center);
 
             &__link {
+                
                 &-icon {
                 width: 27px;
                 height: 28px;
+                margin: 0 10px;
                 fill: v.$color__white;
                 @extend %hover-black-icon;
                 }

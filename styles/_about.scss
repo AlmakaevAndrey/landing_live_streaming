@@ -56,10 +56,11 @@
         height: 500px;
         padding: 0 15px 0 0;
         @include m.d-flex(end,end,nowrap,column, 0, 20px);
+        position: relative;
 
         &::before {
             content: "";
-            @include m.position(absolute, -1, -1, top, left, 2500px, -500px);
+            @include m.position(absolute, -1, -1, top, left, 0px, -500px);
             width: 90%;
             height: 100%;
             background: url(../assets/img/phone.webp) 0 0 / contain no-repeat;
@@ -79,25 +80,25 @@
 
         @media (max-width: v.$media_xl) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 2405px, -360px)
+                @include m.position(absolute, -1, -1,top, left, 0, -360px)
             }
         }
 
         @media (max-width: v.$media_lg) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 2450px, -460px)
+                @include m.position(absolute, -1, -1,top, left, 0, -290px)
             }
         }
 
         @media (max-width: v.$media_md) {
             height: 400px;
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 2905px, -360px)
+                @include m.position(absolute, -1, -1,top, left, 0, -260px)
             }
 
             &-title {
                 @include m.font(35px, 400, v.$color__white);
-                @include m.position(absolute, -1, -1, top, right, 2800px, 20px);
+                @include m.position(absolute, -1, -1, top, right, 50px, 20px);
             }
     
             &-desc {
@@ -105,33 +106,26 @@
                 max-width: 350px;
                 line-height: 1;
                 @include m.font(16px, 300, v.$color__white);
-                @include m.position(absolute, -1, -1, top, right, 2850px, 20px);
+                @include m.position(absolute, -1, -1, top, right, 100px, 20px);
             }
     
         }
 
         @media (max-width: v.$media_sm) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 2600px, -620px);
+                @include m.position(absolute, -1, -1,top, left, 90px, -190px);
                 rotate:z 55deg;
             }
         }
 
-        @media (max-width: v.$media_sm) {
-            &::before {
-                @include m.position(absolute, -1, -1,top, left, 2600px, -620px);
-                rotate:z 55deg;
-
-            }
-        }
         @media (max-width: v.$media_min) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 2270px, -600px);
+                @include m.position(absolute, -1, -1,top, left, 100px, -180px);
                 rotate:z 55deg;
             }
             &-title {
                 @include m.font(35px, 400, v.$color__white);
-                @include m.position(absolute, -1, -1, top, right, 2400px, 20px);
+                @include m.position(absolute, -1, -1, top, right, 40px, 20px);
             }
     
             &-desc {
@@ -139,7 +133,7 @@
                 max-width: 350px;
                 line-height: 1;
                 @include m.font(16px, 300, v.$color__white);
-                @include m.position(absolute, -1, -1, top, right, 2450px, 20px);
+                @include m.position(absolute, -1, -1, top, right, 100px, 20px);
             }
         }
         
@@ -168,7 +162,7 @@
             }
         }
         @media (max-width: v.$media_md) {
-            background: url(../assets/img/cactus.webp) 115% 100%/320px no-repeat;
+            background: url(../assets/img/cactus.webp) 100% 100%/250px no-repeat;
             &-title {
                 margin: 0 0 0 0;
                 @include m.font(35px, 400, v.$color__white)
@@ -176,11 +170,26 @@
     
             &-desc {
                 margin: 10px 0 0 0;
-                max-width: 300px;
+                max-width: 400px;
                 @include m.font(16px, 300, v.$color__white)
             }
             
-             height: 600px;
+             height: 400px;
+        }
+        @media (max-width: v.$media_sm) {
+            background: url(../assets/img/cactus.webp) 100% 100%/250px no-repeat;
+            &-title {
+                margin: 0 0 0 0;
+                @include m.font(35px, 400, v.$color__white)
+            }
+    
+            &-desc {
+                margin: 10px 0 0 10px;
+                max-width: 400px;
+                @include m.font(16px, 300, v.$color__white)
+            }
+            
+             height: 500px;
         }
         
     }
