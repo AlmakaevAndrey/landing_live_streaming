@@ -15,6 +15,7 @@
     @if $inset > -1 {
         inset: $inset;
     }
+
     @else {
         #{$top-or-bottom}: $value1;
         #{$left-or-right}: $value2;
