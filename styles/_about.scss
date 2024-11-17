@@ -15,13 +15,13 @@
             background: url(../assets/img/desktop.webp) 90% 100%/contain no-repeat;
 
             &-title {
-                @include m.font(45px, 400, v.$color__white)
+                @include m.font(45px, 400, v.$color__white);
             }
 
             &-desc {
                 margin: 10px 0 0 0;
                 max-width: 590px;
-                @include m.font(20px, 300, v.$color__white)
+                @include m.font(20px, 300, v.$color__white);
             }
 
             @media (max-width: v.$media_xl) {
@@ -30,24 +30,24 @@
             }
 
             @media (max-width: v.$media_md) {
+                background: url(../assets/img/desktop.webp) 99% 100% / 450px no-repeat;
+
                 &-title {
-                    @include m.font(35px, 400, v.$color__white)
+                    @include m.font(35px, 400, v.$color__white);
                 }
     
                 &-desc {
                     max-width: 500px;
-                    @include m.font(16px, 300, v.$color__white)
+                    @include m.font(16px, 300, v.$color__white);
                 }
-    
-                    background: url(../assets/img/desktop.webp) 99% 100% / 450px no-repeat;
             }
 
             @media (max-width: v.$media_sm) {
+                background: url(../assets/img/desktop.webp) 185px 100% / 450px no-repeat;
+
                 &-desc {
                     max-width: 320px;
                 }
-
-                background: url(../assets/img/desktop.webp) 185px 100% / 450px no-repeat;
         }
     }
 
@@ -68,32 +68,32 @@
         }
 
         &-title {
-            @include m.font(45px, 400, v.$color__white)
+            @include m.font(45px, 400, v.$color__white);
         }
 
         &-desc {
             text-align: right;
             max-width: 480px;
             line-height: 1.4;
-            @include m.font(20px, 300, v.$color__white)
+            @include m.font(20px, 300, v.$color__white);
         }
 
         @media (max-width: v.$media_xl) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 0, -360px)
+                @include m.position(absolute, -1, -1,top, left, 0, -360px);
             }
         }
 
         @media (max-width: v.$media_lg) {
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 0, -290px)
+                @include m.position(absolute, -1, -1,top, left, 0, -290px);
             }
         }
 
         @media (max-width: v.$media_md) {
             height: 400px;
             &::before {
-                @include m.position(absolute, -1, -1,top, left, 0, -260px)
+                @include m.position(absolute, -1, -1,top, left, 0, -260px);
             }
 
             &-title {
@@ -146,13 +146,13 @@
         background: url(../assets/img/cactus.webp) 100% 105%/contain no-repeat;
 
         &-title {
-            @include m.font(45px, 400, v.$color__white)
+            @include m.font(45px, 400, v.$color__white);
         }
 
         &-desc {
             margin: 10px 0 0 0;
             max-width: 730px;
-            @include m.font(20px, 300, v.$color__white)
+            @include m.font(20px, 300, v.$color__white);
         }
 
         @media (max-width: v.$media_lg) {
@@ -162,34 +162,32 @@
             }
         }
         @media (max-width: v.$media_md) {
+            height: 400px;
             background: url(../assets/img/cactus.webp) 100% 100%/250px no-repeat;
             &-title {
                 margin: 0 0 0 0;
-                @include m.font(35px, 400, v.$color__white)
+                @include m.font(35px, 400, v.$color__white);
             }
     
             &-desc {
                 margin: 10px 0 0 0;
                 max-width: 400px;
-                @include m.font(16px, 300, v.$color__white)
+                @include m.font(16px, 300, v.$color__white);
             }
-            
-             height: 400px;
         }
         @media (max-width: v.$media_sm) {
+            height: 500px;
             background: url(../assets/img/cactus.webp) 100% 100%/250px no-repeat;
             &-title {
                 margin: 0 0 0 0;
-                @include m.font(35px, 400, v.$color__white)
+                @include m.font(35px, 400, v.$color__white);
             }
     
             &-desc {
                 margin: 10px 0 0 10px;
                 max-width: 400px;
-                @include m.font(16px, 300, v.$color__white)
+                @include m.font(16px, 300, v.$color__white);
             }
-            
-             height: 500px;
         }
         
     }
