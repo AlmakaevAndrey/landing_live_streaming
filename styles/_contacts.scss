@@ -49,7 +49,7 @@
 
         @media (max-width:v.$media_sm) {
             @include m.d-flex(center, center, nowrap, column-reverse, 0, 20px);
-
+            
         }
     }
 }
