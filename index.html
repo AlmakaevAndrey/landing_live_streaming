@@ -43,46 +43,6 @@
             </nav>
         </div>
     </header>
-
-    <div class="mobile-navigation">
-        <label for="checkboxID" class="mobile-navigation__burger">
-            <svg class="mobile-navigation__burger-icon" aria-label="burger icon">
-                <use href="assets/sprites.svg#burger-icon"></use>
-            </svg>
-        </label>
-
-        <input id="checkboxID" type="checkbox" class="mobile-navigation__toggler">
-
-        <nav class="nav mobile-navigation__menu nav">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="#work" class="nav__list-item-link">How we work</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#about" class="nav__list-item-link">About us</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#experience" class="nav__list-item-link">Our experience</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#testimonials" class="nav__list-item-link">Testimonials</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#formsection" class="nav__list-item-link">Form</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#contacts" class="nav__list-item-link">Contacts</a>
-                </li>
-            </ul>
-            
-            <label for="checkboxID" class="nav__cross">
-                <svg class="nav__cross-icon" aria-label="cross icon">
-                    <use href="assets/sprites.svg#cross-icon"></use>
-                </svg>
-            </label>
-        </nav>
-    </div>
-
     <main aria-label="main content">
         <section class="hero-section" aria-label="hero section">
             <div class="container">
@@ -105,7 +65,7 @@
             </div>
         </section>
 
-        <section class="work-section" id="#work">
+        <section class="work-section">
             <div class="container">
                 <div class="work">
                     <h2 class="work__title">How we work</h2>
@@ -178,7 +138,7 @@
 
         <hr class="divider">
 
-        <section class="about-section" id="about">
+        <section class="about-section">
             <div class="container">
                 <div class="about">
                     <div class="about__quality">
@@ -201,7 +161,7 @@
             </div>
         </section>
 
-        <section class="experience" aria-label="experience section" id="experience">
+        <section class="experience" aria-label="experience section">
         <div class="container">
             <div class="experience">
                 <h2 class="experience__title">Our experience</h2>
@@ -243,7 +203,7 @@
         </div>
     </section>
 
-    <section class="testimonials-section" aria-label="testimonials section" id="testimonials">
+    <section class="testimonials-section" aria-label="testimonials section">
         <div class="container">
             <div class="testimonials">
                 <h2 class="testimonials__title">
@@ -286,12 +246,12 @@
         </div>
     </section>
 
-    <section class="form-section" aria-label="form section" id="formsection">
+    <section class="form-section" aria-label="form section">
         <div class="container">
             <div class="form-section__wrapper">
                 <form action="mailto:streaming__campony@mail.ru" class="form" aria-labelledby="form-title">
-                    <label for="input-name" id="form-title" class="form__title">Ready to get started? Drop us a line!</label>
-                    <input id="input-name" type="text" placeholder="Name" class="form__name" aria-required="true" required name="firstName" autocomplete="name">
+                    <label for="input-title" id="form-title" class="form__title">Ready to get started? Drop us a line!</label>
+                    <input id="input-title" type="text" placeholder="Name" class="form__name" aria-required="true" required name="firstName" autocomplete="name">
                     <input id="input-email" type="email" placeholder="Email" class="form__email" aria-required="true" required name="email">
                     <input id="input-name" type="text" placeholder="What we can do for you?" class="form__text" aria-required="true" required name="question">
 
@@ -307,7 +267,7 @@
     </section>
     </main>
 
-    <footer class="footer-section" aria-label="contacts section" id="contacts">
+    <footer class="footer-section" aria-label="contacts section">
         <div class="container">
             <div class="footer">
                 <div class="footer__terms">
